@@ -46,7 +46,7 @@ In the setup() function:
 - The connection to Wi-Fi is checked, and the local IP address is printed on the Serial monitor.
 
 4. Loop through instructions:
-```
+```cpp
 void loop() {
   HTTPClient http;
   http.begin(url);
