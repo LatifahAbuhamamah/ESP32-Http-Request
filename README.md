@@ -1,8 +1,9 @@
 # ESP32-HTTP-Request
-I have gained a deeper understanding of robot movements by using LEDs to simulate motor control for the robot while working with the ESP32 microcontroller via Wi-Fi. Here are the steps I followed:
+I have gained a deeper understanding of robot movements by using LEDs to simulate motor control for the robot while working with the ESP32 microcontroller via Wi-Fi. 
+Here are the steps I followed:
 ## 1. Hardware Setup
 - Gather the required components:
--- ESP32 board 
+ 1. ESP32 board 
 LEDs (for simulating motor direction control)
 Resistors (220-470 ohms) for current-limiting the LEDs (optional, but recommended)
 Breadboard and jumper wires
