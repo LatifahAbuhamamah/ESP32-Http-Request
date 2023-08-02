@@ -1,5 +1,17 @@
 # ESP32-HTTP-Request
-controlling a robot's movements using IoT technology and the ESP32 microcontroller with simulated motor control using LEDs. 
+I have gained a deeper understanding of robot movements by using LEDs to simulate motor control for the robot while working with the ESP32 microcontroller via Wi-Fi. Here are the steps I followed:
+## 1. Hardware Setup
+- Gather the required components:
+-- ESP32 board 
+LEDs (for simulating motor direction control)
+Resistors (220-470 ohms) for current-limiting the LEDs (optional, but recommended)
+Breadboard and jumper wires
+Connect the LEDs to the ESP32 board:
+
+Connect one leg of the first LED to GPIO pin 21 on the ESP32 (you've already defined it as pinMode(21, OUTPUT); in your code).
+Connect the other leg of the first LED to a current-limiting resistor, then connect the resistor to the GND (ground) pin on the ESP32.
+Repeat the same process for the second LED, connecting it to GPIO pin 22
+
 
 ## Code Explanation:
 The provided Arduino code demonstrates how to use an ESP32 board to connect to Wi-Fi, fetch instructions from the specified URL, and control the robot's motors (represented by LEDs) accordingly. Here's a breakdown of the code:
