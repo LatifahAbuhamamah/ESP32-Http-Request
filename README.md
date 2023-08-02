@@ -1,7 +1,7 @@
 # ESP32-HTTP-Request
-The main objective of this mission is to control the movement of a robot using the Internet of Things (IoT) technology. The components used for this purpose are the ESP32 microcontroller, which is capable of connecting to Wi-Fi networks, and LEDs to simulate the motor control of the robot. By utilizing Wi-Fi connectivity, the ESP32 will fetch instructions from a web server hosted at "http://192.168.1.112/g/f/get_direction.php". The server will provide directions like "forward" or "right" to control the robot's movement.
+controlling a robot's movements using IoT technology and the ESP32 microcontroller with simulated motor control using LEDs. 
 
-Code Explanation:
+## Code Explanation:
 The provided Arduino code demonstrates how to use an ESP32 board to connect to Wi-Fi, fetch instructions from the specified URL, and control the robot's motors (represented by LEDs) accordingly. Here's a breakdown of the code:
 
 1. Include necessary libraries:
@@ -79,6 +79,3 @@ In the loop() function:
 - If the HTTP response is successful (httpResponseCode > 0), the received payload is extracted.
 - Depending on the payload value ("forward" or "right"), the corresponding motor control pins are set, simulating the robot's movement.
 
-Note: The code provided assumes that the web server at "http://192.168.1.112/g/f/get_direction.php" is functional and returns valid instructions. The server should respond with "forward" or "right" based on user input or other sources to control the robot effectively.
-
-Please make sure to adapt the code to match your specific setup, Wi-Fi credentials, and the URL of the web server you are using for the robot's control. Also, ensure that the web server provides the correct instructions as expected by the code.
