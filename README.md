@@ -54,7 +54,6 @@ In the `setup()` function:
 - Serial communication is initiated at a baud rate of 115200.
 - The ESP32 connects to the specified Wi-Fi network using the provided credentials.
 - Pins 21 and 22 are configured as outputs, representing the two motor control pins of the robot.
-- The connection to Wi-Fi is checked, and the local IP address is printed on the Serial monitor.
 
 4. Loop through instructions:
 
@@ -97,6 +96,21 @@ In the `loop()` function:
 - If a valid HTTP response code is received, the payload from the server is obtained and stored in the `payload` variable.
 - Based on the received payload, the code simulates motor control for the robot:
    - If the payload is "forward," the forward LED is turned ON, and the right LED is turned OFF, simulating the robot moving forward.
+![image1](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/Control%20panel.png)
+
+![image2](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/forward.png)
+
+![image3](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/Serial%20monitor-%20forward.jpeg)
+
+![image4](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/f.jpg)
    - If the payload is "right," the right LED is turned ON, and the forward LED is turned OFF, simulating the robot turning right.
+
+![image1](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/right.png)
+![image2](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/Serial%20monitor-%20right.jpeg)
+
+![image3](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/r.jpg)
+
+
+The code is not limited to only forward or right movement of the robot. It can work in any direction, including forward, backward, stop, left, or right.
 
 
