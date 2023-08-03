@@ -1,5 +1,5 @@
 # ESP32-HTTP-Request
-I have gained a deeper understanding of robot movements by using LEDs to simulate motor control for the robot while working with the ESP32 microcontroller via Wi-Fi. 
+Through working with an ESP32 microcontroller over Wi-Fi and using LEDs to simulate motor control, I have gained a deeper understanding of robot movements. I was able to retrieve the robot's last stored direction from the database and apply it to the simulation. 
 **Here are the steps I followed:**
 ### Step1 : Hardware Setup
 - Gather the required components:
@@ -7,7 +7,7 @@ I have gained a deeper understanding of robot movements by using LEDs to simulat
    - LEDs to simulate motor control
    - Wi-Fi connection
 ### Step2 : Software Setup
-The provided Arduino code demonstrates how to use an ESP32 board to connect to Wi-Fi, fetch instructions from the specified URL, and control the robot's motors (represented by LEDs) accordingly. Here's a breakdown of the code:
+The provided Arduino code demonstrates how to use an ESP32 board to connect to Wi-Fi, fetch instructions from the specified URL, and control the robot's motors (represented by LEDs) accordingly. Here is a breakdown of the code:
 
 1. Include necessary libraries:
 
@@ -96,6 +96,7 @@ In the `loop()` function:
 - If a valid HTTP response code is received, the payload from the server is obtained and stored in the `payload` variable.
 - Based on the received payload, the code simulates motor control for the robot:
    - If the payload is "forward," the forward LED is turned ON, and the right LED is turned OFF, simulating the robot moving forward.
+     
 ![image1](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/Control%20panel.png)
 
 ![image2](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/forward.png)
@@ -103,6 +104,7 @@ In the `loop()` function:
 ![image3](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/Serial%20monitor-%20forward.jpeg)
 
 ![image4](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/f.jpg)
+
    - If the payload is "right," the right LED is turned ON, and the forward LED is turned OFF, simulating the robot turning right.
 
 ![image1](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/right.png)
