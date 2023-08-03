@@ -113,6 +113,6 @@ In the `loop()` function:
 ![image3](https://github.com/LatifahAbuhamamah/ESP32-Http-Request/blob/main/images/r.jpg)
 
 
-The code is not limited to only forward or right movement of the robot. It can work in any direction, including forward, backward, stop, left, or right.
+**Note:** The previous code is not limited to only the forward or right movement of the robot. It can work in any direction, including forward, backward, stop, left, or right.*
 
 
