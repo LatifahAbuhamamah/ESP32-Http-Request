@@ -9,7 +9,7 @@ Through working with an ESP32 microcontroller over Wi-Fi and using LEDs to simul
 ### Step2 : Software Setup
 The provided Arduino code demonstrates how to use an ESP32 board to connect to Wi-Fi, fetch instructions from the specified URL, and control the robot's motors (represented by LEDs) accordingly. Here is a breakdown of the code:
 
-1. Include necessary libraries:
+#### 1. Include necessary libraries:
 
 ```cpp
 #include <WiFi.h>
@@ -18,7 +18,7 @@ The provided Arduino code demonstrates how to use an ESP32 board to connect to W
 
 The code includes the required libraries for Wi-Fi communication (`WiFi.h`) and HTTP requests (`HTTPClient.h`).
 
-2. Set up Wi-Fi credentials and URL:
+#### 2. Set up Wi-Fi credentials and URL:
 
 ```cpp
 const char* ssid = "xxxxxxxxxxx"; // My Wi-Fi network name
@@ -28,7 +28,7 @@ const String url = "http://192.168.1.112/g/f/get_direction.php"; // This is my a
 
 The `ssid`, `password`, and `url` variables are set up to hold the Wi-Fi network credentials and the address of the PHP page where the robot's movement instructions will be obtained. 
 
-3. Initialize setup():
+#### 3. Initialize setup():
 
 ```cpp
 void setup() {
@@ -55,7 +55,7 @@ In the `setup()` function:
 - The ESP32 connects to the specified Wi-Fi network using the provided credentials.
 - Pins 21 and 22 are configured as outputs, representing the two motor control pins of the robot.
 
-4. Loop through instructions:
+#### 4. Loop through instructions:
 
 ```cpp
 void loop() {
