@@ -1,5 +1,5 @@
 # ESP32-HTTP-Request
-Through working with an ESP32 microcontroller over Wi-Fi and using LEDs to simulate motor control, I have gained a deeper understanding of robot movements. I was able to retrieve the robot's last stored direction from the database and apply it to the simulation. 
+Through working with an ESP32 microcontroller over Wi-Fi and using LEDs to simulate motor control, I have gained a deeper understanding of robot movements. I was able to retrieve the robot movement instructions from the database and apply it to the simulation. . 
 **Here are the steps I followed:**
 ### Step1 : Hardware Setup
 - Gather the required components:
